@@ -19,6 +19,12 @@
 
 ##找到陣列中，連續數字為1，次數最多的
 
+##解法 :
+##跑一個迴圈:
+##如果陣列中找到1的，則current_num+1，且如果大於max_num，則max_num=current_num
+##如果陣列中找到0的，則current_num歸零
+##最後return max_num
+
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
         """
